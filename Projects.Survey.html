@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
-
+<head>
+<body>
 <h1><li><a href="index.html" >Home</a></li>
 <li><a href="aboutme.html">About Me</a></li>
 <li><a href="Projects.Survey.html">Projects</a></li></h1>
@@ -8,86 +9,107 @@
   <head></head>
   <body>
   <h2>Patient's Medical Survey</h2>
-  <style>
-  #background-form{
-  background-color: lightblue;
-  }
+<style>
+    #background-form{
+      background-color: lightblue;
+    }
 
-h1 {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333333;
-}
+    h1 {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333333;
+    }
+    h1 a:hover {
+      background-color: #111111;
+    }
 
+    h2{
+    font-size: 24px;
+    }
 
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 12px;
-  text-decoration: none;
-  float: left;
-}
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 12px;
+      text-decoration: none;
+      float: left;
+    }
 
-h1 a:hover {
-  background-color: #111111;
-}
  </style>
 
     <fieldset>
       <legend>Personal Information:</legend>
-    <form action="index.php" name="my form" method="POST" id="background-form">
-      
-    First Name: <input type="text" name="firstname" required><br>
-    Last Name: <input type="text" name="lastname" required><br>
-    Email: <input type="text" name="email"><br>
-    Phone Number: <input type="text" name="phonenumber" required><br>
-      
-    Gender:<br>
-      <label><input type="radio" name="sex" value="male">Male<br></label>
-      <label><input type="radio" name="sex" value="Female">Female<br></label>
-     <label><input type="radio" name="sex" value="other">Other </label>
-    <label><input type="text" placeholder="Please specifiy" name="other"><br><br></label>
-      
-    Age: <input type="text" placeholder="Please specifiy" name="other"><br><br>
-      
-    Race: (Check all that apply)<br>
-      <label><input type="checkbox" name="race">African-American<br></label>
-      <label><input type="checkbox" name="race">American Indian or Alaskan Native<br></label>
-      <label><input type="checkbox" name="race">Asian<br></label>
-      <label><input type="checkbox" name="race">European<br></label>
-      <label><input type="checkbox" name="race">Hispanic or Latino<br></label>
-        <label><input type="checkbox" name="race">Others </label>
-        <input type="text" placeholder="Please specifiy" name="other"><br><br>
-        
-    Marital Status:<br>
-      <select name="status">
-      <option value="Married" selected="selected">Married</option>
-      <option value="Widowed">Widowed</option>
-      <option value="Divorced">Divorced</option>
-      <option value="Seperated">Seperated</option>
-      <option value="Never married">Never married</option></select><br><br>
-      
-      Allergies: (Please specify) <input type="text" name="allergies" required><br><br>
-      
-      Emergency Contact Information:<br>
-      Full Name: <input type="text" name="fullname" required><br>
+      <form action="index.php" name="my form" method="POST" id="background-form">
+
+      First Name: <input type="text" name="firstname" required><br>
+      Last Name: <input type="text" name="lastname" required><br>
+      Email: <input type="text" name="email"><br>
       Phone Number: <input type="text" name="phonenumber" required><br>
-      Relationship: <input type="text" name="relationship" required><br><br>
-      
-      <button type="submit" onclick="myFunction()">Submit</button>
-      
-    <script>
-		function myFunction() {
-  			document.getElementById("demo").innerHTML = "Thank you for completing the survey.";
-		}
-    </script>
-        
-    </form>     
+
+      Gender:<br>
+        <label><input type="radio" name="sex" value="male">Male<br></label>
+        <label><input type="radio" name="sex" value="Female">Female<br></label>
+       <label><input type="radio" name="sex" value="other">Other </label>
+      <label><input type="text" placeholder="Please specifiy" name="other"><br><br></label>
+
+      Age: <input type="text" placeholder="Please specifiy" name="other"><br><br>
+
+      Race: (Check all that apply)<br>
+        <label><input type="checkbox" name="race">African-American<br></label>
+        <label><input type="checkbox" name="race">American Indian or Alaskan Native<br></label>
+        <label><input type="checkbox" name="race">Asian<br></label>
+        <label><input type="checkbox" name="race">European<br></label>
+        <label><input type="checkbox" name="race">Hispanic or Latino<br></label>
+          <label><input type="checkbox" name="race">Others </label>
+          <input type="text" placeholder="Please specifiy" name="other"><br><br>
+
+      Marital Status:<br>
+        <select name="status">
+        <option value="Married" selected="selected">Married</option>
+        <option value="Widowed">Widowed</option>
+        <option value="Divorced">Divorced</option>
+        <option value="Seperated">Seperated</option>
+        <option value="Never married">Never married</option></select><br><br>
+
+        Allergies: (Please specify) <input type="text" name="allergies" required><br><br>
+
+        Emergency Contact Information:<br>
+        Full Name: <input type="text" name="fullname" required><br>
+        Phone Number: <input type="text" name="phonenumber" required><br>
+        Relationship: <input type="text" name="relationship" required><br><br>
+
+        <button type="submit" onclick="myFunction()">Submit</button>
+
+      <script>
+          function myFunction() {
+              document.getElementById("demo").innerHTML = "Thank you for completing the survey.";
+          }
+      </script>
+      	<p id="demo"></p>
+      </form>     
     </fieldset>
+<h2>Solar Battery Charger</h2>
+<video width="400" controls>
+  <source src="SolarBattery.mp4" type="video/mp4">
+</video>
+<a href="#"><img width="400" src="SolarBatterySetup.PNG"></a>
+<p>A solar powered battery charger with modular USB connections for additional solar panel inputs. The LCD displays voltage, current, and battery percentage information through the micro-controller.</p>
+
+<h2>Tank Arena Game</h2>
+<video width="400" controls>
+  <source src="TankArena.mp4" type="video/mp4">
+</video>
+<p>A two-player game in Java built on NetBeans GUI that fights against each other. Split screen is incorporated for each player and both players share the same minimap on the middle.</p>
+
+<h2>Super Rainbow Reef Game</h2>
+<video width="400" controls>
+  <source src="SuperReef.mp4" type="video/mp4">
+  </video>
+<p>A single player game based on the tales of Katch(shell) and Pop(star) that is on the adventure to take down Biglegs(octopus enemy).</p>
 
   </body>
-    <p id="demo"></p>
+ </head>
 </html>
