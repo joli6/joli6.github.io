@@ -1,22 +1,44 @@
 <!DOCTYPE html>
 <html>
 
-  <a href="index.html" >Home</a>
-  <a href="cat.PNG" target="_blank">About Me</a>
-  <a href="Projects.Survey.html">Projects</a>
+<h1><li><a href="index.html" >Home</a></li>
+<li><a href="aboutme.html">About Me</a></li>
+<li><a href="Projects.Survey.html">Projects</a></li></h1>
 
   <head></head>
-  <p id="demo"></p>
   <body>
-  <h1>Patient's Medical Survey</h1>
+  <h2>Patient's Medical Survey</h2>
   <style>
-  label{
-  color: black;
+  #background-form{
+  background-color: lightblue;
   }
-  </style>
+
+h1 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+}
+
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  float: left;
+}
+
+h1 a:hover {
+  background-color: #111111;
+}
+ </style>
+
     <fieldset>
       <legend>Personal Information:</legend>
-    <form action="index.php" name="my form" method="POST">
+    <form action="index.php" name="my form" method="POST" id="background-form">
       
     First Name: <input type="text" name="firstname" required><br>
     Last Name: <input type="text" name="lastname" required><br>
@@ -61,11 +83,11 @@
 		function myFunction() {
   			document.getElementById("demo").innerHTML = "Thank you for completing the survey.";
 		}
-	</script>
+    </script>
         
     </form>     
     </fieldset>
 
   </body>
-  
+    <p id="demo"></p>
 </html>
