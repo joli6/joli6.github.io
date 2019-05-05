@@ -81,21 +81,22 @@
         Phone Number: <input type="text" name="phonenumber" required><br>
         Relationship: <input type="text" name="relationship" required><br><br>
 
-        <button type="submit" onclick="myFunction()">Submit</button>
-
+    <button type="submit" onclick="myFunction()">Submit</button>
       <script>
           function myFunction() {
-              document.getElementById("demo").innerHTML = "Thank you for completing the survey.";
+              document.getElementById("testButton").innerHTML ="Thank you for completing the survey.";
+              alert("Thank you for completing the survey.");
           }
       </script>
-      	<p id="demo"></p>
+    <p id="testButton"></p>
+          
       </form>     
     </fieldset>
 <h2>Solar Battery Charger</h2>
 <video width="400" controls>
   <source src="SolarBattery.mp4" type="video/mp4">
 </video>
-<a href="#"><img width="400" src="SolarBatterySetup.PNG"></a>
+<a href="https://joli6.github.io/SolarBatterySetup.PNG" target="_blank"><img width="400" src="SolarBatterySetup.PNG"></a>
 <p>A solar powered battery charger with modular USB connections for additional solar panel inputs. The LCD displays voltage, current, and battery percentage information through the micro-controller.</p>
 
 <h2>Tank Arena Game</h2>
@@ -111,7 +112,7 @@
 <p>A single player game based on the tales of Katch(shell) and Pop(star) that is on the adventure to take down Biglegs(octopus enemy).</p>
 
 <h2>Cricket Temperature App</h2>
-<video width="400" controls>
+<video height="600" controls>
   <source src="TempApp.mp4" type="video/mp4">
   </video>
   <p>An Android app that calculates the temperature in Celsius and Fahrenhiet based on the number of chirps a cricket makes within a period of time.</p>
