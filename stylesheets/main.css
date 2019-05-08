@@ -6,7 +6,6 @@ h1 {
   background-color: #333333;
 }
 
-<!-- a:hover is a pseudo class, mouse over effect -->
 h1 a:hover {
   background-color: #111111;
 }

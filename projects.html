@@ -2,6 +2,8 @@
 <html>
     
 <head>
+    <meta charset="utf-8">
+    <title>My Projects</title>
     <link rel="stylesheet" href="stylesheets/main.css">   
 </head>
 <body>
@@ -32,9 +34,9 @@
         <label><input type="radio" name="sex" value="male">Male<br></label>
         <label><input type="radio" name="sex" value="Female">Female<br></label>
        <label><input type="radio" name="sex" value="other">Other </label>
-      <label><input type="text" placeholder="Please specifiy" name="other"><br><br></label>
+      <label><input type="text" placeholder="Please specify" name="other"><br><br></label>
 
-      Age: <input type="text" placeholder="Please specifiy" name="other"><br><br>
+      Age: <input type="text" placeholder="Please specify" name="other"><br><br>
 
       Race: (Check all that apply)<br>
         <label><input type="checkbox" name="race">African-American<br></label>
@@ -43,7 +45,7 @@
         <label><input type="checkbox" name="race">European<br></label>
         <label><input type="checkbox" name="race">Hispanic or Latino<br></label>
           <label><input type="checkbox" name="race">Others </label>
-          <input type="text" placeholder="Please specifiy" name="other"><br><br>
+          <input type="text" placeholder="Please specify" name="other"><br><br>
 
       Marital Status:<br>
         <select name="status">
@@ -53,14 +55,14 @@
         <option value="Seperated">Seperated</option>
         <option value="Never married">Never married</option></select><br><br>
 
-        Allergies: (Please specify) <input type="text" name="allergies" required><br><br>
+        Allergies: <input type="text" placeholder="Please specify" name="allergies" required><br><br>
 
         Emergency Contact Information:<br>
         Full Name: <input type="text" name="fullname" required><br>
         Phone Number: <input type="text" name="phonenumber" required><br>
         Relationship: <input type="text" name="relationship" required><br><br>
 
-    <button type="submit" onclick="myFunction()">Submit</button>
+    <button id="sumibt" type="submit" onclick="myFunction()">Submit</button>
       <script>
           function myFunction() {
               alert("Thank you for completing the survey.");
@@ -68,39 +70,46 @@
       </script> 
       </form>     
     </fieldset>
+
     
+<h2>Messaging Application</h2> 
+  <ul id="messages"></ul>
+    <input id="textbox" type="text">
+    <button id="button">Send</button>
+    <script src="javascripts/script.js"></script>
+
 <h2>Solar Battery Charger</h2>
 <video width="400" controls>
-  <source src="SolarBattery.mp4" type="video/mp4">
+  <source src="src/SolarBattery.mp4" type="video/mp4">
 </video>
-<a><img width="400" src="SolarBatterySetup.PNG"></a>
+<a><img width="400" src="src/SolarBatterySetup.PNG"></a>
 <p>A solar powered battery charger with modular USB connections for additional solar panel inputs. The LCD displays voltage, current, and battery percentage information through the micro-controller.</p>
 
 <h2>Tank Arena Game</h2>
 <video width="400" controls>
-  <source src="TankArena.mp4" type="video/mp4">
+  <source src="src/TankArena.mp4" type="video/mp4">
 </video>
 <p>A two-player game in Java built on NetBeans GUI that fights against each other. Split screen is incorporated for each player and both players share the same minimap on the middle.</p>
 
 <h2>Super Rainbow Reef Game</h2>
 <video width="400" controls>
-  <source src="SuperReef.mp4" type="video/mp4">
+  <source src="src/SuperReef.mp4" type="video/mp4">
   </video>
 <p>A single player game based on the tales of Katch(shell) and Pop(star) that is on the adventure to take down Biglegs(octopus enemy).</p>
 
 <h2>Cricket Temperature App</h2>
 <video height="600" controls>
-  <source src="TempApp.mp4" type="video/mp4">
+  <source src="src/TempApp.mp4" type="video/mp4">
   </video>
   <p>An Android app that calculates the temperature in Celsius and Fahrenhiet based on the number of chirps a cricket makes within a period of time.</p>
     
 <h2>Concrete Compression Test</h2>
-    <a><img height="400" src="week1concrete.PNG"></a>
-    <a><img height="400" src="week2concrete.PNG"></a>
-    <a><img height="400" src="week3concrete.PNG"></a>
-    <a><img height="400" src="week4concrete.PNG"></a>
-    <a><img height="300" src="concretedata.PNG"></a>
-    <p>The goal of this experiement was to investigate the compressive strength needed to break concrete on various curing time. (Pictures from left to right: Week 1, Week 2, Week 3, Week4, Strength vs Curing Time Graph)</p>
+    <a><img height="400" src="src/week1concrete.PNG"></a>
+    <a><img height="400" src="src/week2concrete.PNG"></a>
+    <a><img height="400" src="src/week3concrete.PNG"></a>
+    <a><img height="400" src="src/week4concrete.PNG"></a>
+    <a><img height="300" src="src/concretedata.PNG"></a>
+    <p>The goal of this experiement was to investigate the compressive strength needed to break concrete on various curing time. (Pictures from left to right: Week 1, Week 2, Week 3, Week 4, Strength vs Curing Time Graph)</p>
 
 <h2>Pong Game on VGA Monitor</h2>
     <li>Development of a pong arcade game in Quartus onto Altera FPGA board and VGA monitor</li> 
@@ -127,8 +136,9 @@
     <li>Establish port channel for peer link and communication between two network switches</li>
     <li>Improve bandwidth and prevent single link failure through MLAG on a third network switch</li>
     
-    <h2>Self Balancing Robot</h2> 
-    <a href="https://joli6.github.io/selfbalancerobot.PNG" target="_blank"><img height="300" src="selfbalancerobot.PNG"></a>
-    <p>A self-balancing robot programmed using ARM TM4C123G micro-controller and gyroscope sensor through GPIO, interrupts, PWM, and serial communications.</p>
+<h2>Self Balancing Robot</h2> 
+  <a><img height="300" src="src/selfbalancerobot.PNG"></a>
+  <p>A self-balancing robot programmed using ARM TM4C123G micro-controller and gyroscope sensor through GPIO, interrupts, PWM, and serial communications.</p>
+
   </body>
 </html>
